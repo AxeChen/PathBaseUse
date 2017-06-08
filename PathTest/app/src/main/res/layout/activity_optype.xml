@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:text="DIFFERENCE"
+            android:onClick="difference"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_weight="1"
+            android:text="INTERSECT"
+            android:onClick="intersect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_weight="1"
+            android:text="UNION"
+            android:onClick="union"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:text="XOR"
+            android:onClick="xor"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:onClick="reverseDifference"
+        android:text="REVERSE_DIFFERENCE"
+        android:layout_height="wrap_content" />
+    <com.mg.axe.pathtest.PathOpView
+        android:id="@+id/pathOPView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_weight="1"
+            android:text="WINDING"
+            android:onClick="winding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_weight="1"
+            android:text="EVEN_ODD"
+            android:layout_width="match_parent"
+            android:onClick="evenOdd"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_weight="1"
+            android:text="INVERSE_WINDING"
+            android:layout_width="match_parent"
+            android:onClick="inverseWinding"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_weight="1"
+            android:text="INVERSE_EVEN_ODD"
+            android:layout_width="match_parent"
+            android:onClick="inverseEvenOdd"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <com.mg.axe.pathtest.PathFillTypeView
+        android:id="@+id/fillTypeView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
